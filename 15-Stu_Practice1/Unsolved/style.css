@@ -1,0 +1,106 @@
+body {
+    height: 90vh;
+    padding: 10px;
+    background-color: black;
+}
+
+main {
+    padding: 50px;
+    color: white;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+header {
+    color: black;
+    display: grid;
+    position: fixed;
+    padding-top: 10px;
+    top: 5px;
+    left: 100px; 
+}
+
+.boxHeader {
+    font-family: 'EB Garamond';
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: white;
+    color: black;
+
+}
+
+.box {
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'Oswald';
+    color: white;
+}
+
+h2 {
+    font-family: 'Sonsie One';
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+.boats {
+    background-image: url(images/lake.jpg);
+}
+
+.building {
+    background-image: url(images/empire.jpg);
+}
+
+.human {
+    background-image: url(images/person.jpg);
+}
+
+.tree {
+    background-image: url(images/tree.jpg);
+}
+
+.extra {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+
+    main {
+        padding: 10px;
+        padding-top: 50px;
+        color: white;
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .extra {
+        display: block;
+    }
+
+    .architecture {
+        background-image: url(images/geo.jpg);
+    }
+
+    .sand {
+        background-image: url(images/sand.jpg);
+    }
+
+    .bridge {
+        background-image: url(images/bridge.jpg);
+    }
+    
+    .camera {
+        background-image: url(images/lens.jpg);
+    }
+}

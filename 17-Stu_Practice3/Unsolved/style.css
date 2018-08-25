@@ -1,0 +1,151 @@
+body {
+    height: 80vh;
+    background-color: brown;
+}
+
+nav {
+    color: white;
+    font-family: 'Montserrat';
+}
+
+main {
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 500px 200px 500px 100px;
+    grid-template-columns: 100px 200px;
+    grid-gap: 5px;
+}
+
+.box {
+    border: none;
+    border-radius: 30px;
+    grid-row: span 1;
+    grid-column: span 2;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#happy{
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+    text-justify: center;
+    background-color: red;
+}
+
+#firstPara , #secondPara , #lastPara {
+    color: white;
+    font-family: 'Montserrat';
+    text-align: center;
+    text-justify: center;
+    background-color: turquoise;
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+#lastPara {
+    display: none;
+}
+
+#tie{
+    background-image: url(images/tie.png);
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+#sign{
+    background-image: url(images/sign.jpg);
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+#sax{
+    background-image: url(images/sax.jpg);
+    grid-row: span 1;
+    grid-column: span 2;
+    display: none;
+}
+
+#moped {
+    background-image: url(images/moped.jpg);
+    display: grid;
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+#light{
+    background-image: url(images/light.jpg);
+    grid-row: span 1;
+    grid-column: span 1;
+    display: none;
+}
+
+#flower{
+    background-image: url(images/flower.jpg);
+    grid-row: span 1;
+    grid-column: span 1;
+    display: none;
+}
+
+@media only screen and (min-width: 600px){
+
+    main {
+        height: 100%;
+        padding: 20px;
+        display: grid;
+        grid-template-rows: 200px repeat(3, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 5px;
+    }
+
+    #happy {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    #firstPara , #secondPara , #lastPara {
+        display: grid;
+        margin: fill;
+        text-align: center;
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+    
+    #tie {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    #sign {
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+
+    #sax {
+        display: grid;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    #moped {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    #light {
+        display: grid;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    #flower {
+        display: grid;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+}
