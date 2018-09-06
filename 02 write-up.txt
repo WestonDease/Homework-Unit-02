@@ -1,0 +1,6 @@
+Homework 02
+
+A Document Object Model or DOM is a version of the site that the user accesses and manipulates. It is like a printed copy of a paper document
+that the receiver is allowed to modify as they see fit. The DOM is also able to correct the errors of an html page automatically by finding missing
+elements and adding them for example. The DOMs purpose is to run the site smoothly and easily for the user by breaking off from the source code to
+fit the users needs as best as possible.
